@@ -497,6 +497,7 @@ svg {
 .projects__title {
   font-size: var(--h2-font-size);
   margin-bottom: 0.75rem;
+  text-align: center;
 }
 
 .projects__button {
@@ -716,6 +717,10 @@ svg {
   .projects__container {
     grid-template-columns: repeat(2, 352px);
   }
+
+  .nav__mode__mobile {
+    display: none;
+  }
 }
 
 /* For large devices */
@@ -882,4 +887,63 @@ svg {
   .scrollup {
     right: 3rem;
   }
+}
+
+/*=============== THEME ===============*/
+.change-theme {
+  font-size: 1.25rem;
+  color: var(--title-color);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.change-theme:hover {
+  color: var(--first-color);
+}
+
+/*========== Variables Dark theme ==========*/
+body.dark-theme {
+  --hue: 210;
+  --first-color: hsl(var(--hue), 100%, 70%);
+  --first-color-alt: hsl(var(--hue), 56%, 50%);
+  --title-color: hsl(
+    228,
+    8%,
+    15%
+  ); /* Darker text for better readability on a light background */
+  --text-color: hsl(228, 8%, 35%); /* Slightly darker text color */
+  --body-color: hsl(228, 15%, 95%); /* Light background color for the body */
+  --container-color: hsl(
+    228,
+    15%,
+    100%
+  ); /* Even lighter background color for containers */
+}
+
+/*========== 
+    Color changes in some parts of 
+    the website, in light theme
+==========*/
+.dark-theme .button__gray {
+  background-color: var(--container-color);
+}
+
+.dark-theme .button__gray:hover {
+  background-color: hsl(var(--hue), 24%, 16%);
+}
+
+.dark-theme .filters__content {
+  background-color: var(--container-color);
+}
+
+.dark-theme::-webkit-scrollbar {
+  background-color: hsl(var(--hue), 8%, 16%);
+}
+
+.dark-theme::-webkit-scrollbar-thumb {
+  background-color: hsl(var(--hue), 8%, 24%);
+}
+
+.dark-theme::-webkit-scrollbar-thumb:hover {
+  background-color: hsl(var(--hue), 8%, 32%);
 }
