@@ -128,7 +128,7 @@ sr.reveal(`.services__card`, `.projects__card`, {interval: 100})
 /*=============== LIGHT / DARK MODE ===============*/
 
 const themeButton = document.getElementById('theme-button');
-const darkTheme = 'dark-theme';
+const darkTheme = 'light-theme';
 const iconTheme = 'ri-sun-line';
 
 const selectedTheme = localStorage.getItem('selected-theme');

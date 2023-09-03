@@ -902,7 +902,7 @@ svg {
 }
 
 /*========== Variables Dark theme ==========*/
-body.dark-theme {
+body.light-theme {
   --hue: 210;
   --first-color: hsl(var(--hue), 100%, 70%);
   --first-color-alt: hsl(var(--hue), 56%, 50%);
@@ -924,26 +924,26 @@ body.dark-theme {
     Color changes in some parts of 
     the website, in light theme
 ==========*/
-.dark-theme .button__gray {
+.light-theme .button__gray {
   background-color: var(--container-color);
 }
 
-.dark-theme .button__gray:hover {
+.light-theme .button__gray:hover {
   background-color: hsl(var(--hue), 24%, 16%);
 }
 
-.dark-theme .filters__content {
+.light-theme .filters__content {
   background-color: var(--container-color);
 }
 
-.dark-theme::-webkit-scrollbar {
+.light-theme::-webkit-scrollbar {
   background-color: hsl(var(--hue), 8%, 16%);
 }
 
-.dark-theme::-webkit-scrollbar-thumb {
+.light-theme::-webkit-scrollbar-thumb {
   background-color: hsl(var(--hue), 8%, 24%);
 }
 
-.dark-theme::-webkit-scrollbar-thumb:hover {
+.light-theme::-webkit-scrollbar-thumb:hover {
   background-color: hsl(var(--hue), 8%, 32%);
 }
