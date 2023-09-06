@@ -125,7 +125,7 @@ sr.reveal(`.about__data`, `.skills__data`, {origin: 'left'})
 sr.reveal(`.about__image`, `.skills__content`, {origin: 'right'})
 sr.reveal(`.services__card`, `.projects__card`, {interval: 100})
 
-/*=============== LIGHT / DARK MODE ===============*/
+/*=============== LIGHT / DARK MODE ===============
 
 const themeButton = document.getElementById('theme-button');
 const darkTheme = 'light-theme';
@@ -148,3 +148,4 @@ themeButton.addEventListener('click', () => {
   localStorage.setItem('selected-icon', getCurrentIcon());
 
 });
+*/

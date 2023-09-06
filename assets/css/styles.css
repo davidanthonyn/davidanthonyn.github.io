@@ -374,38 +374,87 @@ svg {
   row-gap: 3.5rem;
 }
 
-.skills__data {
+.skills__title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 0.5rem;
+  font-size: var(--small-font-size);
+  font-weight: var(--font-semi-bold);
+  margin-bottom: 2.5rem;
+}
+
+.skills__title i {
+  font-size: 1rem;
+  font-weight: initial;
+}
+
+.skills__subtitle {
   text-align: center;
+  color: var(--title-color);
+  font-weight: var(--font-semi-bold);
 }
 
-.skills__description {
-  margin-bottom: 2rem;
-}
-
-.skills__content,
-.skills__group {
+.skills__info,
+.skills__data,
+.skills__blob {
   display: grid;
 }
 
-.skills__content {
-  grid-template-columns: repeat(2, max-content);
-  column-gap: 4rem;
+.skills__info {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem 2rem;
+}
+
+.skills__data {
   justify-content: center;
-  align-items: baseline;
+  text-align: center;
 }
 
-.skills__group {
-  row-gap: 1rem;
-  list-style: decimal-leading-zero;
+.skills__blob {
+  width: 80px;
+  height: 100px;
+  background-color: var(--container-color);
+  border-radius: 3rem;
+  place-items: center;
+  margin-bottom: 1rem;
 }
 
-.skills__item {
-  font-weight: var(--font-medium);
-  color: var(--title-color);
+.skills__blob img {
+  width: 40px;
 }
 
-.skills__item::marker {
-  color: var(--first-color);
+.skills__name {
+  font-size: var(--small-font-size);
+  margin-bottom: 0.25rem;
+}
+
+.skills__subtitle {
+  font-size: var(--small-font-size);
+  color: var(--text-color);
+}
+
+/* animation skills */
+.skills__blob:hover img {
+  animation: bounce-skills 0.6s;
+}
+
+@keyframes bounce-skills {
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translateY(-6px);
+  }
+  40% {
+    transform: translate(0);
+  }
+  60% {
+    transform: translateY(-3px);
+  }
+  80% {
+    transform: translate(0);
+  }
 }
 
 /*=============== SERVICES ===============*/
